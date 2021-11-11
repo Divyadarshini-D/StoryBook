@@ -1,6 +1,6 @@
 {
   "name": "@divyadarshini-d/story-book",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -86,9 +86,6 @@
   "directories": {
     "lib": "lib"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Divyadarshini-D/StoryBook.git"
-  },
+  "repository": "git+https://github.com/Divyadarshini-D/StoryBook.git",
   "homepage": "https://github.com/Divyadarshini-D/StoryBook#readme"
 }
