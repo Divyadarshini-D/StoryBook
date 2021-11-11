@@ -1,6 +1,6 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "@divyadarshini-d/story-book",
+  "version": "1.0.2",
   "private": false,
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -8,6 +8,19 @@
   "files": [
     "/lib"
   ],
+  "keywords": [],
+  "author": "Divya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Divyadarshini-D/StoryBook/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "np": {
+    "publish": false,
+    "tests": false
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -18,10 +31,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "prepublishOnly": "yarn build",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -69,5 +81,14 @@
     "rollup-plugin-postcss": "^4.0.1",
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.4.4"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Divyadarshini-D/StoryBook.git"
+  },
+  "homepage": "https://github.com/Divyadarshini-D/StoryBook#readme"
 }
