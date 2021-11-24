@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.css";
 
-export interface ButtonProps  {
+export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
@@ -17,14 +17,12 @@ export interface ButtonProps  {
   /**
    * Button contents
    */
-  label: string;
+  label?: string;
   /**
    * Optional click handler
    */
-  onClick?: (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => void;
-};
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+}
 
 /**
  * Primary UI component for user interaction
@@ -34,6 +32,7 @@ const Button = ({
   backgroundColor,
   size = "medium",
   onClick,
+
   label,
 }: ButtonProps) => {
   const mode = primary
@@ -45,7 +44,7 @@ const Button = ({
       className={["storybook-button", `storybook-button--${size}`, mode].join(
         " "
       )}
-      style={backgroundColor ? { backgroundColor }: {}}
+      style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >
       {label}
