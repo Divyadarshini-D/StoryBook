@@ -1,3 +1,4 @@
 import Button from "./components/ButtonComponent";
-
-export { Button };
+import Input from "./components/InputComponent";
+import ScrollUp from "./components/ScrollUpComponent";
+export { Button , Input, ScrollUp};
