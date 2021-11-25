@@ -8,6 +8,15 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
     "@storybook/addon-knobs",
-    "@storybook/addon-viewport"
+    "@storybook/addon-viewport",
+    {
+      name: '@storybook/preset-scss',
+      options: {
+        cssLoaderOptions: {
+          modules: true,
+          localIdentName: '[name]__[local]--[hash:base64:5]',
+        }
+      }
+    },
   ]
 }

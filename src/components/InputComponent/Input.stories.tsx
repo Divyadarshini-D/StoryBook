@@ -4,7 +4,7 @@ import { Story } from "@storybook/react";
 import Input, { InputProps } from "./Input";
 
 export default {
-  title: "FORM/Input",
+  title: "Input",
   component: Input,
   argTypes: {
     backgroundColor: { control: "color" },

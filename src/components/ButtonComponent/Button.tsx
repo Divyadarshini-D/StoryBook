@@ -1,6 +1,6 @@
 import React from "react";
 import "./Button.css";
-
+import { ButtonStyle } from "../GlobalStyle/GlobalStyle";
 export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
@@ -14,6 +14,8 @@ export interface ButtonProps {
    * How large should the button be?
    */
   size?: "small" | "medium" | "large";
+
+  borderRadius?: number;
   /**
    * Button contents
    */
@@ -32,23 +34,24 @@ const Button = ({
   backgroundColor,
   size = "medium",
   onClick,
-
+  borderRadius,
   label,
 }: ButtonProps) => {
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
   return (
-    <button
+    <ButtonStyle
       type="button"
       className={["storybook-button", `storybook-button--${size}`, mode].join(
         " "
       )}
-      style={backgroundColor ? { backgroundColor } : {}}
+      backgroundColor={backgroundColor}
+      borderRadius={borderRadius}
       onClick={onClick}
     >
       {label}
-    </button>
+    </ButtonStyle>
   );
 };
 
